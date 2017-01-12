@@ -1,0 +1,13 @@
+{
+  "name": "luktask-api",
+  "version": "1.0.0",
+  "description": "API de Gestão de Tarefas",
+  "main": "index.js",
+  "author": "Lucas Valhos",
+  "dependencies": {
+    "babel": "^6.5.2"
+  },
+  "script": {
+    "start": "babel-node index.js"
+  }
+}
