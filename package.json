@@ -5,9 +5,14 @@
   "main": "index.js",
   "author": "Lucas Valhos",
   "dependencies": {
-    "babel": "^6.5.2"
+    "babel": "^6.5.2",
+    "express": "^4.14.0"
   },
-  "script": {
+  "scripts": {
     "start": "babel-node index.js"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-preset-latest": "^6.16.0"
   }
 }
