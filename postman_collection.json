@@ -1,0 +1,44 @@
+{
+	"variables": [],
+	"info": {
+		"name": "LukTask API",
+		"_postman_id": "1d51d7fc-35b3-4412-8ab3-52924cb7f2fd",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"description": "",
+			"item": []
+		},
+		{
+			"name": "Tasks",
+			"description": "",
+			"item": [
+				{
+					"name": "List",
+					"request": {
+						"url": "http://localhost:3000/tasks",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "MAIN",
+			"request": {
+				"url": "http://localhost:3000",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
