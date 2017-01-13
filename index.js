@@ -1,19 +1,12 @@
 import express from "express";
+import consign from "consign";
 
 const PORT = 3000;
 const app = express();
 
-app.set('json spaces', 4);
-
-app.get('/', (req, res) => res.json({status: "LukTask API"})); 
-
-app.get('/tasks', (req, res) => {
-  res.json({
-    tasks: [
-      {title: "Learning NodeJS"},
-      {title: "Making apis"}
-    ]
-  });
-});
-
-app.listen(PORT, () => console.log("LukTask API - porta ${PORT}"));
+consign()
+  .include("models")
+  .then("libs/middlewares.js")
+  .then("routes")
+  .then("libs/boot.js")
+  .into(app);

@@ -6,6 +6,7 @@
   "author": "Lucas Valhos",
   "dependencies": {
     "babel": "^6.5.2",
+    "consign": "^0.1.2",
     "express": "^4.14.0"
   },
   "scripts": {
