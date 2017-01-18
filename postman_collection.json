@@ -10,7 +10,28 @@
 		{
 			"name": "Auth",
 			"description": "",
-			"item": []
+			"item": [
+				{
+					"name": "Auth",
+					"request": {
+						"url": "http://localhost:3000/token",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"email\": \"lucas@valhos.com\",\n\t\"password\": \"123\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
 		},
 		{
 			"name": "Tasks",
@@ -21,7 +42,13 @@
 					"request": {
 						"url": "http://localhost:3000/tasks",
 						"method": "GET",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6Mn0.wmYluUYGlR0-3TmUGz5aTYYp0NphNbhgLWeIqHT7_aU",
+								"description": ""
+							}
+						],
 						"body": {},
 						"description": ""
 					},
@@ -37,11 +64,16 @@
 								"key": "Content-Type",
 								"value": "application/json",
 								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6Mn0.wmYluUYGlR0-3TmUGz5aTYYp0NphNbhgLWeIqHT7_aU",
+								"description": ""
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\t\"title\": \"Durmir\"\n}"
+							"raw": "{\n\t\"title\": \"Estudar\"\n}"
 						},
 						"description": ""
 					},
@@ -52,7 +84,13 @@
 					"request": {
 						"url": "http://localhost:3000/tasks/1",
 						"method": "GET",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6Mn0.wmYluUYGlR0-3TmUGz5aTYYp0NphNbhgLWeIqHT7_aU",
+								"description": ""
+							}
+						],
 						"body": {},
 						"description": ""
 					},
@@ -68,11 +106,16 @@
 								"key": "Content-Type",
 								"value": "application/json",
 								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6Mn0.wmYluUYGlR0-3TmUGz5aTYYp0NphNbhgLWeIqHT7_aU",
+								"description": ""
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\t\"title\": \"Lucas Valhoss\"\n}"
+							"raw": "{\n\t\"title\": \"Estudar muito\"\n}"
 						},
 						"description": ""
 					},
@@ -83,7 +126,13 @@
 					"request": {
 						"url": "http://localhost:3000/tasks/1",
 						"method": "DELETE",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6Mn0.wmYluUYGlR0-3TmUGz5aTYYp0NphNbhgLWeIqHT7_aU",
+								"description": ""
+							}
+						],
 						"body": {},
 						"description": ""
 					},
@@ -109,7 +158,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\t\"name\": \"Lucas Valhos\",\n\t\"email\": \"lucas@valhos.com\"\n}"
+							"raw": "{\n\t\"name\": \"Lucas Valhos\",\n\t\"email\": \"lucas@valhos.com\",\n\t\"password\": \"123\"\n}"
 						},
 						"description": ""
 					},
@@ -118,9 +167,15 @@
 				{
 					"name": "read",
 					"request": {
-						"url": "http://localhost:3000/users/2",
+						"url": "http://localhost:3000/user",
 						"method": "GET",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6Mn0.wmYluUYGlR0-3TmUGz5aTYYp0NphNbhgLWeIqHT7_aU",
+								"description": ""
+							}
+						],
 						"body": {},
 						"description": ""
 					},
@@ -129,9 +184,15 @@
 				{
 					"name": "delete",
 					"request": {
-						"url": "http://localhost:3000/users/1",
+						"url": "http://localhost:3000/user",
 						"method": "DELETE",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MX0.7B1Ez2y6RPvCAhernT_kKkCzJTlo-qAQvGXgExgk_zw",
+								"description": ""
+							}
+						],
 						"body": {},
 						"description": ""
 					},
